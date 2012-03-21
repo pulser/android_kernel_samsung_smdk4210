@@ -443,7 +443,7 @@ __v7_setup:
 	ldmia	r12, {r0-r3}
 #endif
 
-3:	mov	r10, #0
+4:	mov	r10, #0
 	mcr	p15, 0, r10, c7, c5, 0		@ I+BTB cache invalidate
 	dsb
 #ifdef CONFIG_MMU
